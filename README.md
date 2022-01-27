@@ -1,2 +1,3 @@
-# web_invitation
-Wedding invitation using vanilla JavaScript, HTML5, CSS3
+Wedding Invitation
+Please visit suarez.ru to view this website live on a server.
+This page was built using vanilla JavaScript, HTML5, CSS3.
