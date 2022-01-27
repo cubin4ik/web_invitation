@@ -1,0 +1,267 @@
+@font-face {
+    font-family: Anjhay;
+    src: url("./fonts/Anjhay.woff");
+}
+@font-face {
+    font-family: Hamiltone1;
+    src: url("./fonts/Hamiltone1.otf");
+}
+@font-face {
+    font-family: HelveticaUltraLigh;
+    src: url("./fonts/HelveticaNeueCyr-UltraLight.woff");
+}
+@font-face {
+    font-family: HelveticaThin;
+    src: url("./fonts/HelveticaNeueCyr-Thin.woff");
+}
+@font-face {
+    font-family: southernmoonlight;
+    src: url("./fonts/southernmoonlight.otf");
+}
+@font-face {
+    font-family: CormorantSCBold;
+    src: url("./fonts/CormorantSC-Bold.ttf");
+}
+@font-face {
+    font-family: CormorantSCRegular;
+    src: url("./fonts/CormorantSC-Regular.ttf");
+}
+@font-face {
+    font-family: CormorantSCMedium;
+    src: url("./fonts/CormorantSC-Medium.ttf");
+}
+@font-face {
+    font-family: CormorantSCLight;
+    src: url("./fonts/CormorantSC-Light.ttf");
+}
+@font-face {
+    font-family: CormorantSCSemiBold;
+    src: url("./fonts/CormorantSC-SemiBold.ttf");
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: CormorantSCMedium, Arial, serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+main {
+    overflow: hidden;
+}
+html, body {
+    /*
+    min-height: -webkit-fill-available;
+    */
+    height: 100vh;
+    /*
+    background-image: url("https://lh3.googleusercontent.com/UFIx5lfG9k5a9Y840X6RHTfZ-0-yTdL8WR0RDupxXx3PrHrZHp1G8OFgu1OZl-vE1qDRecSyteLa80YG=s1600");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    */
+    background-color: rgb(253, 252, 249);
+    position: relative;
+    z-index: -100;
+}
+.top-edge {
+    position: absolute;
+    max-width: 500px;
+    top: -60px;
+    right: 0;
+    z-index: -1;
+    /*
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    */
+}
+.top-edge img {
+    /*
+    visibility: visible;
+    opacity: 17%;
+    */
+    width: 200px;
+    transform: rotate(-60deg);
+    z-index: -1;
+}
+.bottom-edge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.bottom-edge img {
+    /*
+    visibility: visible;
+    opacity: 17%;
+    */
+    width: 400%;
+    z-index: -1;
+}
+.center-edge {
+    position: absolute;
+    top: 200px;
+    z-index: -1;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+.center-edge img {
+    z-index: -1;
+}
+.square {
+    position: absolute;
+    height: 80vh;
+    width: 80vw;
+    max-width: 500px;
+    border-style: solid;
+    border-width: 1px;
+    color: #f5c440;
+}
+section {
+    min-height: 100vh;
+    text-align: center;
+    background-color: rgb(253, 252, 249, 0.85);
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.wrapper {
+    padding: 90px;
+    background-image: url('./img/leaves/leaves.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+.card {
+    position: relative;
+    top: 10px;
+    height: 70vw;
+    width: 70vw;
+    max-width: 300px;
+    max-height: 300px;
+    background-color: grey;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*
+    background-image: url('./img/paper2.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+    */
+    background-color: rgb(253, 252, 249);
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2.5em;
+    color: #687c51;
+}
+.hero-text {
+    font-family: Anjhay;
+    text-shadow: 4px 4px 10px rgba(104, 124, 81, 0.3);
+}
+.meta {
+    font-family: CormorantSCLight, HelveticaThin, Arial;
+    font-size: 0.5em;
+}
+.date {
+    font-family: CormorantSCLight, HelveticaThin, Arial;
+    font-size: 0.4em;
+}
+.date strong, small {
+    margin-top: 0.1em;
+    font-family: CormorantSCLight, HelveticaThin, Arial;
+}
+.invitation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*
+    background-image: url('./img/monument.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    */
+}
+.square1 {
+    position: absolute;
+    height: 85vh;
+    width: 95vw;
+    max-width: 500px;
+    border-style: solid;
+    border-width: 1px;
+    color: rgba(245, 196, 64, 0.5);
+}
+.article {
+    position: relative;
+    color: #687c51;
+    padding: 40px;
+}
+.article * {
+    font-size: 1.2em;
+    margin: auto;
+    max-width: 500px;
+    text-align: center;
+}
+#name {
+    margin-bottom: 30px;
+}
+.text-header {
+    font-family: CormorantSCBold;
+    text-align: center;
+    font-size: 1.3em;
+}
+.text-content {
+    font-family: CormorantSCSemiBold;
+    text-align: center;
+    font-size: 1em;
+}
+.devider {
+    font-family: CormorantSCBold;
+    margin-top: 1.3em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    padding: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.facts {
+    height: 100%;
+    background-image: url('./img/beach.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.facts .article {
+    color: white;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+.facts .text-header {
+    font-family: CormorantSCBold;
+}
+.timer {
+    margin: 0.6em;
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 450px) {
+    .wrapper {padding: 100px}
+}
+@media (min-width: 366px) {
+    .content {font-size: 3em;}
+    .text-header, .devider {font-size: 1.5em;}
+    .text-content {font-size: 1.3em;}
+}
